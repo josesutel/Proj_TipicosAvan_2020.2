@@ -7,11 +7,16 @@ import Ets.Mod.Adm.GeradorCartaoEntidades.Cartao;
 public interface CartaoService {
 	
 	
-	public static void salvarCartao(Cartao cartao)throws Exception{
+	public  void salvarCartao(Cartao cartao)throws Exception;
 		
-	}
-	public static List<Cartao> buscar(){
-		return null;
+	
+	public List<Cartao> buscar();
 		
-	}
+	
+	public   void deletarCartao(Cartao cartao) throws Exception;
+		
+	
+	public  void alterarCartao(Cartao cartao) throws Exception; 
+		
+	
 }

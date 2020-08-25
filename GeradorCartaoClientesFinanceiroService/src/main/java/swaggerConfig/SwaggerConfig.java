@@ -27,7 +27,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 	     
 	    	Docket docket =  new Docket(DocumentationType.SWAGGER_2)
 	        .select()
-	        .apis(RequestHandlerSelectors.basePackage("Ets.ModAdm.GeradorCartaoApi"))
+	        .apis(RequestHandlerSelectors.basePackage("Ets.Mod.Adm.GeradorCartaoApi"))
 	        .paths(PathSelectors.any())
 	        .build()
 	        .useDefaultResponseMessages(false)
@@ -40,9 +40,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 	    private ApiInfo apiInfo() {
 	        return new ApiInfoBuilder()
 	                .title("Exemplo de API REST da aula de tópicos")
-	                .description("Este e um projeto exemplo, para aula de tópicos avançados")
+	                .description("Este e um projeto desenvolvido, para aula de tópicos avançados")
 	                .version("1.0.0")                
-	                .contact(new Contact("Marcelo Soares", "", "mbsoares.infor@gmail.com"))
+	                .contact(new Contact("Jose Sutel", "", "joseeduardosutel6650@gmail.com"))
 	                .build();
 	    }
 	    

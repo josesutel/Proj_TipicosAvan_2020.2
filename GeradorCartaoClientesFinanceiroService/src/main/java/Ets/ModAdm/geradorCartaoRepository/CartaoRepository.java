@@ -1,5 +1,10 @@
 package Ets.ModAdm.geradorCartaoRepository;
 
-public class CartaoRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import Ets.Mod.Adm.GeradorCartaoEntidades.Cartao;
+
+public interface CartaoRepository extends
+  CrudRepository<Cartao, Long>{
 
 }
