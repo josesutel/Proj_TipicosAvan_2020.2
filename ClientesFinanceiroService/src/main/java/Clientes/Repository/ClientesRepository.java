@@ -1,8 +1,7 @@
-package Ets.ClientesFinanceiroRepository;
+package Clientes.Repository;
 import org.springframework.data.repository.CrudRepository;
 
-
-import Ets.ModAdm.ClientesFinanceiroEntidades.Clientes;
+import Clientes.Entidades.Clientes;
 
 public interface ClientesRepository extends
 CrudRepository<Clientes, Long>{

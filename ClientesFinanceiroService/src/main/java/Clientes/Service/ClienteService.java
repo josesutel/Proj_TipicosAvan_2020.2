@@ -1,10 +1,10 @@
-package Ets.ModAdm.ClientesFinanceiroService;
+package Clientes.Service;
 
 
 
 import java.util.List;
 
-import Ets.ModAdm.ClientesFinanceiroEntidades.Clientes;
+import Clientes.Entidades.Clientes;
 
 public interface ClienteService {
 	

@@ -1,6 +1,6 @@
-package Ets.ModAdm.ClientesFinanceiroApi;
+package Clientes.Api;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import Ets.ModAdm.ClientesFinanceiroEntidades.Clientes;
-import Ets.ModAdm.ClientesFinanceiroService.ClienteService;
+import Clientes.Entidades.Clientes;
+import Clientes.Service.ClienteService;
 
 
 
@@ -23,7 +23,7 @@ public class ClientesApi {
 	@Autowired
 	private ClienteService clienteService;
 	
-	@RequestMapping(value = "/clientes", method =RequestMethod.POST , produces = "application/json" )
+	@RequestMapping(value = "/clientes", method = RequestMethod.POST , produces = "application/json" )
 	public ResponseEntity<String>SalvarCliente(@RequestBody Clientes clientes)throws Exception{
 		ResponseEntity<String> ret = null;
 		try {

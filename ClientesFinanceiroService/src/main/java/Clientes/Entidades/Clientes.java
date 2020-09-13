@@ -1,4 +1,4 @@
-package Ets.ModAdm.ClientesFinanceiroEntidades;
+package Clientes.Entidades;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
