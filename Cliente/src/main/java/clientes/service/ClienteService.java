@@ -1,10 +1,10 @@
-package Clientes.Service;
+package clientes.service;
 
 
 
 import java.util.List;
 
-import Clientes.Entidades.Clientes;
+import clientes.entidades.Clientes;
 
 public interface ClienteService {
 	

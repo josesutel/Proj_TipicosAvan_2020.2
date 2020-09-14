@@ -1,4 +1,4 @@
-package Clientes.Entidades;
+package clientes.entidades;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

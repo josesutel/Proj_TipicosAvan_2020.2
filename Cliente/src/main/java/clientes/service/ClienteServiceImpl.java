@@ -1,4 +1,4 @@
-package Clientes.Service;
+package clientes.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
-import Clientes.Entidades.Clientes;
-import Clientes.Repository.ClientesRepository;
+import clientes.entidades.Clientes;
+import clientes.repository.ClientesRepository;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {

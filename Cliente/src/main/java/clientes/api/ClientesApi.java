@@ -1,4 +1,4 @@
-package Clientes.Api;
+package clientes.api;
 
 
 import java.util.List;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import Clientes.Entidades.Clientes;
-import Clientes.Service.ClienteService;
+import clientes.entidades.Clientes;
+import clientes.service.ClienteService;
 
 
 

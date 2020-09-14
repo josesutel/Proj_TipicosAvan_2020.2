@@ -1,4 +1,4 @@
-package ClientesConfig;
+package clientes.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,7 +25,7 @@ public class SwaggerConfig {
 	     
 	    	Docket docket =  new Docket(DocumentationType.SWAGGER_2)
 	        .select()
-	        .apis(RequestHandlerSelectors.basePackage("Clientes.Api"))
+	        .apis(RequestHandlerSelectors.basePackage("clientes.api"))
 	        .paths(PathSelectors.any())
 	        .build()
 	        .useDefaultResponseMessages(false)
@@ -37,7 +37,7 @@ public class SwaggerConfig {
 	    
 	    private ApiInfo apiInfo() {
 	        return new ApiInfoBuilder()
-	                .title("Exemplo de API REST da aula de tópicos")
+	                .title(" API REST de Cadastro de clientes")
 	                .description("Este e um projeto desenvolvido, para aula de tópicos avançados")
 	                .version("1.0.0")                
 	                .contact(new Contact("Jose Sutel", "", "joseeduardosutel6650@gmail.com"))
