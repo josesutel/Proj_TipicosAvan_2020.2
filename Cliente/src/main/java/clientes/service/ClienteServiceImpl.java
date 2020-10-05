@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 
 import clientes.entidades.Clientes;
@@ -12,11 +11,11 @@ import clientes.repository.ClientesRepository;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
-	@SuppressWarnings("unused")
+	
 	@Autowired
-	private ClientesRepository clientesRepositoty;
+	private ClientesRepository clientesRepository;
 
-	private static final CrudRepository<Clientes, Long> clientesRepository = null;
+	//private static final CrudRepository<Clientes, Long> clientesRepository = null;
 	
 	
 	
@@ -34,16 +33,16 @@ public class ClienteServiceImpl implements ClienteService {
 		if(clientes.getCpf()!= clientes.getCpf()) {
 			throw new Exception("Digite um cpf valido");
 		}
-		
-		
+		clientesRepository.save(clientes);
+	
 	}
 
 	@Override
 	public void salvar(Clientes clientes) throws Exception {
-		if(clientes.getNome().equals(""));{
+		if(clientes.getNome().equals("")){
 			throw new Exception("O campo nome deve ser preenchido");
 		}
-		
+		clientesRepository.save(clientes);
 	}
 
 	@Override
