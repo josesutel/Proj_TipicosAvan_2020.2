@@ -50,5 +50,11 @@ public class ClienteServiceImpl implements ClienteService {
 		// TODO Auto-generated method stub
 		
 	}
+		@Override
+	public Clientes getClientesByCpf(int cpf) {
+		// TODO Auto-generated method stub
+		return clientesRepository.getClientesByCpf(cpf);
+	
+	}
 
 }

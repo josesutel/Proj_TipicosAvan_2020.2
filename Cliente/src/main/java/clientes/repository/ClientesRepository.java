@@ -5,6 +5,7 @@ import clientes.entidades.Clientes;
 
 public interface ClientesRepository extends
 CrudRepository<Clientes, Long>{
-	
+ 
+	public Clientes getClientesByCpf(int cpf);
 
 }

@@ -16,7 +16,7 @@ public interface ClienteService {
 		
 		
 	
-	
+	public Clientes getClientesByCpf(int cpf);
 	public  List<Clientes> buscar(); 
 		
 		
