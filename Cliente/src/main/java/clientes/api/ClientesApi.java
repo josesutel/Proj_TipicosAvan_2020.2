@@ -66,7 +66,7 @@ return ret;
 return ret;
 }
 	@RequestMapping(value = "/clientes/{cpf}", method =RequestMethod.GET , produces = "application/json" )
-	public Clientes getClientesCpf(@PathVariable int cpf){
+	public Clientes getClientesCpf(@PathVariable int cpf) throws Exception{
 		return clienteService.getClientesByCpf(cpf);
 	}
 	

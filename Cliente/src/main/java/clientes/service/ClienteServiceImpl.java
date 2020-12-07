@@ -14,7 +14,7 @@ public class ClienteServiceImpl implements ClienteService {
 	
 	@Autowired
 	private ClientesRepository clientesRepository;
-
+    
 	//private static final CrudRepository<Clientes, Long> clientesRepository = null;
 	
 	
@@ -47,12 +47,16 @@ public class ClienteServiceImpl implements ClienteService {
 
 	@Override
 	public void deletar(Clientes clientes) throws Exception {
-		// TODO Auto-generated method stub
-		
+		if(clientes.getId()!= clientes.getId()) {
+			throw new Exception("Digite o ID correto do Cliente");
+		}
+		clientesRepository.delete(clientes);
 	}
 		@Override
-	public Clientes getClientesByCpf(int cpf) {
-		// TODO Auto-generated method stub
+	public Clientes getClientesByCpf(int cpf)throws Exception {
+		if( clientesRepository.existsById(Integer.toUnsignedLong(cpf))== false) {
+			throw new Exception("Cliente nao cadastrado");
+		}
 		return clientesRepository.getClientesByCpf(cpf);
 	
 	}

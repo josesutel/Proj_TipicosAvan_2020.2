@@ -16,7 +16,7 @@ public interface ClienteService {
 		
 		
 	
-	public Clientes getClientesByCpf(int cpf);
+	public Clientes getClientesByCpf(int cpf) throws Exception;
 	public  List<Clientes> buscar(); 
 		
 		
